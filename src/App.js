@@ -6,6 +6,7 @@ import SiteNav from "./components/common/SiteNav";
 import HomePage from "./components/home/HomePage";
 import LoginPage from "./components/auth/LoginPage";
 import RegisterPage from "./components/auth/RegisterPage";
+import Contacts from "./components/contacts/Contacts";
 
 function App() {
   console.log("app comp");
@@ -17,7 +18,7 @@ function App() {
         <Route path="/" exact={true} element={<HomePage />} />
         <Route path="/login" exact={true} element={<LoginPage />} />
         <Route path="/register" exact={true} element={<RegisterPage />} />
-        {/* <Route path='/contacts' element={<Contacts />} /> */}
+        <Route path='/contacts' element={<Contacts />} />
       </Routes>
       <SiteFooter />
     </div>
